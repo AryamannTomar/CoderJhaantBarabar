@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 int Partition(vector<int>& a, int left , int right){
     int pivot=left;
     int end = a[right];
@@ -26,18 +29,15 @@ int QuickSelect(vector<int>a, int left , int right , int k){
     return QuickSelect(a,pivot+1,right,k);
 }
 
-
-
-
-void solve(){
-    //taking input
+int main(){
     int n,k;
     cin>>n>>k;
     vector<int>a(n);
     for(int i=0;i<n;i++) cin>>a[i];
-
+    
     //calling Quickselect to print the kth smallest number &
     // kth largest(or n-k+1 th smallest) number
     cout<<QuickSelect(a,0,n-1,k)<<" "<<QuickSelect(a,0,n-1,n-k+1);
-    cout<<"\n";
+    cout<<"\n";    
+    return 0;
 }

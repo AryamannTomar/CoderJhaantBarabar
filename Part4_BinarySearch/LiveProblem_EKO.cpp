@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 bool check(vector<long long>&tree, long long m, long long mid){
     int n = tree.size();
     long long total = 0;
@@ -7,8 +10,7 @@ bool check(vector<long long>&tree, long long m, long long mid){
     return total>=m;
 }
 
-
-void solve(){
+int main(){
     long long n,m;
     cin>>n>>m;
     vector<long long>tree(n);
@@ -27,4 +29,5 @@ void solve(){
         }
     }
     cout<<ans;
+    return 0;
 }
