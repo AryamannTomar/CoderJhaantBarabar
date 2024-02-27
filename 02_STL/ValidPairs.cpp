@@ -3,33 +3,31 @@ using namespace std;
 
 /*
 Returns array of next greater element of array  
-Input:    9 10 2 3 4 
-Output:   10 -1 3 4 -1   
+Searching Finding in a map takes O(LogN) time - Total Iterations-N => O(NLogN)
+Input: 5 11
+1 3 8 2 6 
+Output: 1 2
 */
 
-bool CheckSumPairs(int v[], int n, int div, int rem) {
-    std::map<int,int> mp;
-    for(int i=0; i<n; i++){
-        int curr_rem = v[i]%div;
-        if(curr_rem<0)
-            curr_rem += div;
-        mp[curr_rem]++;
+int main() {
+    int n,target;
+    cin>>n>>target;
+    vector<int>a(n);
+    
+    for(int i=0;i<n;i++){
+        cin>>a[i];
     }
-
-    for(int curr_rem=0; curr_rem<div; curr_rem++){
-        if(mp[curr_rem] != 0){
-            int other_rem = rem-curr_rem;
-            if(other_rem<0)
-                other_rem += div;
-            if(curr_rem == other_rem){
-                if(mp[curr_rem]%2!=0) return 0;
-            }
-            if(mp[curr_rem] != mp[other_rem]){
-                return 0;
-            }else{
-                mp[other_rem] = 0;
-            }
+    
+    map<int,int>mp;
+    
+    for(int i=0;i<n;i++){
+        if(mp.count(target-a[i])==0){
+            mp[a[i]]=i;
+        }
+        else{
+            cout<<i<<" "<<mp[target-a[i]];
+            return 0;
         }
     }
-    return 1;
+    cout<<-1<<" "<<-1;
 }
