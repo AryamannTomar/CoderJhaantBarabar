@@ -1,0 +1,24 @@
+We Will Start with very basic Algorithms 
+Representation of Graphs - Adjacency List, Adjacency Matrix
+We will then increase the level of the Algorithms 
+    - Topological Ordering
+    - MSD
+    - Single Shortest Path
+Clear Motivation - Learning Path becomes Interesting
+
+Graph Representation Techniques
+    - Adjacency List
+    - Adjacency Matrix --Uses a lot of Space--
+    - Edge List
+
+(1-2-3)-4
+<node> {node, weight}
+
+DFS 
+Don't take it lightly because DFS is used in many other algorithms which are advanced 
+ - Centroid decomposition
+ - Heavy light decomposition
+DP on Trees also utilizes DFS in one way or the other. 
+
+How DFS actually works? (depth first search)
+(start - visited - traverse to node connected - redo all processes)
