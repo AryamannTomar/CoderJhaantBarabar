@@ -1,0 +1,9 @@
+Q. What is BS?
+Q. Advantages/ DisAdvantages of BS?
+Q. Applications of BS?
+
+Linear Searching takes O(N) time. If you have a sorted array then instead of searching for any number using a linear search approach - searching from left to right you can use a binary
+search approach. 
+    - Just go to the middle element of this array and chk if it is equal to target.
+    - If Greater than target search to the left side vice-versa.
+    - At Every Step of Binary Search It's like reducing the View by Half. n -> n/2 -> n/4 -> n/2^k=1 ==> k=Log2N

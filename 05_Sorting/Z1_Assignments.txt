@@ -1,6 +1,0 @@
-Sort an Array in Wave Form
-Sort by Kth Bit
-Min Num of Swaps required to sort an Array
-Relative Sorting
-Sorting the Skills
-Murder
