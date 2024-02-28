@@ -7,12 +7,12 @@ using namespace std;
 Print Indexes of Pairs their Sum = K
 Input: 5 3
 4 2 7 8 2
-Output: 
-17
+Output: 17
 */
 
-void maxSumK(int n, int k, vector<ll>& a){
+void maxSumK(vector<ll>& a, int k){
     ll maxi=LL_MIN;
+    int n=a.size();
     if(k==0||k>n){
         cout<<"Invalid Output";
         return;
@@ -27,14 +27,5 @@ void maxSumK(int n, int k, vector<ll>& a){
             maxi=max(maxi,curr_total);
         }
     }
-    cout<<maxi<<"\n";
-}
-
-int main(){
-    int n,k;
-    cin>>n>>k;
-    vector<ll>a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
-    maxSumK(n,k,a);
-    return 0;
+    cout<<maxi;
 }

@@ -14,11 +14,3 @@ int fib(int n){
     int nth = fib(n-1)+fib(n-2);
     return nth;
 }
-          
-int main(){
-    int n;
-    cin>>n;
-    int ans = fib(n);
-    cout<<ans<<"\n";
-    return 0;
-}

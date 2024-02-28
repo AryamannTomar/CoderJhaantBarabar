@@ -3,8 +3,8 @@ using namespace std;
 
 /*
 Returns array of next greater element of array  
-Input:    9 10 2 3 4 
-Output:   10 -1 3 4 -1   
+Input:  9 10 2 3 4 
+Output: 10 -1 3 4 -1   
 */
 
 int main() {

@@ -3,9 +3,9 @@ using namespace std;
 
 /*
 Finding the k largest Element in a Vector using a PQ
-Input:    5 3
+Input: 5 3
 1 2 3 4 5
-Output:   3   
+Output: 3   
 */
 
 int main() {
