@@ -20,7 +20,6 @@ Output:
 
 void CombinationSum(vector<int>& arr, int ind, int target, vector<int>& temp, vector<vector<int>>& ans){
     int n=arr.size();
-    // -- Base Condition --
     // Combination Sum is Found
     if(target==0){
         ans.push_back(temp);
@@ -28,20 +27,11 @@ void CombinationSum(vector<int>& arr, int ind, int target, vector<int>& temp, ve
     }
     // Combination Sum Not Found
     if(ind>=n || target-arr[ind]<0) return;
-
-    // -- Recursive Calls --
     // Pick the ith Element
     temp.push_back(arr[ind]);
     CombinationSum(arr,ind,target-arr[ind], temp, ans);
-
     // Dont pick the ith Element
     temp.pop_back();
     CombinationSum(arr,ind+1,target,temp,ans);
-
     return;
-}
-
-int main(){
-    
-    return 0;
 }

@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Input: abc
+Output: abc acb bac bca cab cba
+*/
+
 void genPermutations(string& s, int ind, int& n, vector<string>& ans){
     if(ind>=n){
         ans.push_back(s);

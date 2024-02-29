@@ -25,3 +25,10 @@ void printKeypad(int num){
     printKeypadHelper(num, "", options); 
     return; 
 }
+
+int main(){
+    int n;
+    cin>>n;
+    printKeypad(n);    
+    return 0;
+}

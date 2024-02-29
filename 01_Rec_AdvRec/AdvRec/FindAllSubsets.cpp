@@ -20,11 +20,9 @@ void genSubsets(vector<int>& arr, int i, vector<int>& temp, vector<vector<int>>&
   // Take ith element
   temp.push_back(arr[i]);
   genSubsets(arr,i+1,temp,ans);
-  
   // Do not Take ith element
   temp.pop_back();
   genSubsets(arr,i+1,temp,ans);
-
   return;
 }
 
