@@ -1,0 +1,43 @@
+******* <------ All Topics -------> ********
+01_Rec_AdvRec,
+02_STL,
+03_2PtrSlidingWindow,
+04_GreedyAlgos,
+05_Sorting,
+06_BinarySearch,
+07_BackTracking,
+08_BitManipulation,
+09_NumberTheory,
+10_DP,
+11_DisjointSetUnion,
+12_Trees,
+13_Graphs,
+14_Combinatorics,
+15_Geometry,
+16_GameTheory,
+17_String,
+18_Tries,
+19_RangeQuery,
+20_BitMasking
+
+================================================================================================================================================================================
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SOS REMAINING SOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+================================================================================================================================================================================
+
+******* <------ Super Important -------> ********
+04_GreedyAlgos,
+07_BackTracking,
+10_DP,
+12_Trees,
+13_Graphs,
+17_String,
+18_Tries,
+
+******* <------ Just Important -------> ********
+08_BitManipulation,
+09_NumberTheory,
+14_Combinatorics,
+20_BitMasking
+
+******* <------ Good To Have -------> ********
+Rest ALL
