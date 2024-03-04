@@ -2,3 +2,5 @@ BackTracking: BackTracking is a technique that uses recursion to find the soluti
 the solution of the problem based on the constraints given to solve the problem. 
     - N Queen Problem
     - Maze Solving Problem
+
+When you have different options, backtracking says that let us take one of the directions and lets try to explore it to the extent
