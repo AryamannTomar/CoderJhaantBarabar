@@ -9,11 +9,8 @@ Output: 5
 int main(){
     string s;
     cin>>s;
-    int n=s.size();
-    
-    // Vector to store the Frequency of all the characters occuring in SubString
+    int n=s.size();    
     vector<int> f(26);
-    
     int start=0;
     int total=0;
     int maxlen=0;

@@ -2,8 +2,8 @@
 using namespace std;
 
 /*
-LoL! If you haven't done this problem then it is said that you haven't done binarySearch at All ..... 
-In Step Functions, if you do not move your pointers correctly, you might lead to Infinite Loops and thus it is better to take Ans variable
+Suppose you have been given a barn where elements signifies the distances from an original point.
+Now, you have place the cows in it such that the minimum distance b/w 2 adjacent gets maximized 
 Input: 5 2 
 4 2 1 3 6
 Output:
@@ -30,7 +30,7 @@ int main(){
     for(int i=0;i<n;i++) cin>>arr[i];
     sort(arr.begin(),arr.end());
     int i=1,j=1e9+5;
-    int ans = 1e9+5;
+    int ans=1e9+5;
     while(i<=j){
         int mid=i+(j-i)/2;
         if(check(arr,k,mid)==true){
@@ -39,6 +39,6 @@ int main(){
         }
         else j=mid-1;
     }
-    cout<<ans<<"\n";   
+    cout<<ans;   
     return 0;
 }

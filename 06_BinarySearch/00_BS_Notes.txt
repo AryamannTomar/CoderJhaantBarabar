@@ -19,3 +19,5 @@ Types of Problems in Binary Search ->
     - Searching in Sorted Array / Rotated Sorted Array
     - StepUp Fn/ StepDown Fn/ PeakValue Fn
     - Maximizing the Min Value
+
+Inside StepUp/StepDown Functions, if you do not move your pointers correctly, you might lead to Infinite Loops and thus it is better to take Ans variable

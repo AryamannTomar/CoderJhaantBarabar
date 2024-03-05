@@ -2,8 +2,6 @@
 using namespace std;
 
 /*
-Really Exciting Problem because it is 1800 Difficulty Level problem from CodeForces;
-
 */
 
 int main(){

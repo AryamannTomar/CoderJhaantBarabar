@@ -1,34 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int Partition(vector<int>& a, int left , int right){
-    int pivot = left;
-    int end = a[right];
-    
-    for(int i=left;i<right;i++){
-        if(a[i]<=end){
-            swap(a[pivot],a[i]);
-            pivot++;
-        }
-    }
-    swap(a[pivot],a[right]);
-    return pivot;
-}
-
-void QuickSort(vector<int>& a, int left , int right){
-    if(left>=right) return;
-    int pivot = Partition(a,left,right);
-    QuickSort(a,left,pivot-1);
-    QuickSort(a,pivot+1,right);
-}
-
+/*
+Time Complexity: O(N.LogN)
+Space Complexity: O(1) InPlace Sorting Algorithm
+If you do not pick up a good pivot point then it may also be the case of o(N^2)
+Individually Sort the elements on their Place (Shift smaller elements to left of X and greater elements to the right of X)
+*/
 
 int main(){
-    int n;
-    cin>>n;
-    vector<int>a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
-    QuickSort(a,0,n-1);
-    for(int i=0;i<n;i++) cout<<a[i]<<" ";    
+    
     return 0;
 }

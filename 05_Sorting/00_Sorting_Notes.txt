@@ -1,0 +1,14 @@
+3 Main Widely Used Sorting Algorithms =>
+    - Counting Sort
+    - Merge Sort
+    - Quick Sort
+
+Time Complexity of Sorting Algorithms (in general) => O(N.LogN) 
+- Merge Sort 
+
+2_1,3,2_2,5,9
+Stable Sorting Algorithms   
+    - 2_1,2_2,3,5,9
+    - Counting Sort, Merge Sort
+UnStable Sorting Algorithms -  2_2,2_1,3,5,9
+    - Quick Sort
