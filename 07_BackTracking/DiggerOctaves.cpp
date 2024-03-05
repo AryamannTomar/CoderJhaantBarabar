@@ -5,20 +5,19 @@ using namespace std;
 
 bool vis[10][10];
 vector<string>mine(10);
-set<vector<pair<int,int>>> paths ;
-int dirX[] = {0 , 0 , -1 , 1};
-int dirY[] = {-1 , 1 , 0 , 0};
+set<vector<pair<int,int>>>paths ;
+int dirX[]={0,0,-1,1};
+int dirY[]={-1,1,0,0};
 
-bool isSafe(int r, int c, int n, int m){
+bool isSafe(int r,int c,int n,int m){
     return (r>=0 && r<n && c>=0 && c<m);
 }
 
 void countOct(int n, int r, int c, int total, vector<pair<int,int>>way){
-    //base condition
     if(!isSafe(r,c,n,n) || mine[r][c]=='.' || vis[r][c]==1) return;
     vis[r][c]=1;
     way.push_back({r,c});
-    // collected  8 gems
+    // collected 8 gems
     if(total == 8){
         sort(way.begin(), way.end());
         paths.insert(way);

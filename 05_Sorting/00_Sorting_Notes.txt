@@ -11,4 +11,16 @@ Stable Sorting Algorithms
     - 2_1,2_2,3,5,9
     - Counting Sort, Merge Sort
 UnStable Sorting Algorithms -  2_2,2_1,3,5,9
+    - Heap Sort, Selection Sort ?
     - Quick Sort
+
+Counting Sort Algorithm
+Helpful only in a SmallDomain
+Storing the count of every Number? How will this help ....
+Make a Frequency Array from minimum to the maximum element and keep on incrementing their count
+Find the Min & Max ele in the array and then make your choice of range according to that only!!
+Not helpful for =>
+    - Very Large Numbers 
+    - Fractional Numbers (Storing numbers as Indexes)
+    - Negative Numbers (Catch: Shift every number to right by most -ve number)
+    - Custom Sorting
