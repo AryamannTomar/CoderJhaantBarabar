@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Really Exciting Problem because it is 1800 Difficulty Level problem from CodeForces;
+
+*/
+
 int main(){
     int n;
     cin>>n;
@@ -11,15 +16,10 @@ int main(){
         l[i]=seg[i].first;
         r[i]=seg[i].second;
     }
-
-
     // sort the left & right points vector
     sort(l.begin(),l.end());
     sort(r.begin(),r.end());
-
-    // initalize the maximum ans
-    int ans =n-1;
-
+    int ans=n-1;
     // binary search for each segment and minimize the ans
     for(int i=0;i<n;i++){
         int right_half = lower_bound(l.begin(),l.end(),seg[i].second+1)-l.begin();

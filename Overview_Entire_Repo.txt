@@ -4,8 +4,8 @@
 03_2PtrSlidingWindow,     ✔
 04_GreedyAlgos,           Ｏ
 05_Sorting,               Ｏ
-06_BinarySearch,          ✔
-07_BackTracking,          Ｏ
+06_BinarySearch,          Ｏ
+07_BackTracking,          ✔
 08_BitManipulation,       ☢
 09_NumberTheory,          ☢
 10_DP,                    Ｏ
