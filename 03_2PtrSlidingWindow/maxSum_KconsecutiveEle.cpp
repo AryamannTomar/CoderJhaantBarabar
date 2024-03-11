@@ -4,7 +4,7 @@ using namespace std;
 #define LL_MIN -1e18
 
 /*
-Print Indexes of Pairs their Sum = K
+Give me the Max. sum over all the windows present inside an Array  
 Input: 5 3
 4 2 7 8 2
 Output: 17
