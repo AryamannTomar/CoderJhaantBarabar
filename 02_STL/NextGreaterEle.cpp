@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-Returns array of next greater element of array  
+Next greater Element for an element x, is the first greater element on right side of x in the array
 Input:  9 10 2 3 4 
 Output: 10 -1 3 4 -1   
 */

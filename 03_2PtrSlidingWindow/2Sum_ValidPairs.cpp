@@ -7,11 +7,12 @@ Input: 6 8
 Output: 0 2 
 */
 
-void Sum2(vector<int>& a, int target){
-    int start=0,end=a.size()-1;
+// 1st Method
+void Sum2(vector<int>& arr, int target){
+    int start=0,end=arr.size()-1;
     while(start<end){
-        if(a[start]+a[end]>target) end--;
-        else if(a[start]+a[end]<target) start++;
+        if(arr[start]+arr[end]>target) end--;
+        else if(arr[start]+arr[end]<target) start++;
         else{
             cout<<start<<" "<<end;
             return;
@@ -20,14 +21,15 @@ void Sum2(vector<int>& a, int target){
     cout<< -1<<" "<< -1;
 }
 
-void Sum2_Map(vector<int>& a, int target){
+// 2nd Method
+void Sum2_Map(vector<int>& arr, int target){
     map<int,int> mp;   
-    for(int i=0;i<a.size();i++){
-        if(mp.count(target-a[i])==0){
-            mp[a[i]]=i;
+    for(int i=0;i<arr.size();i++){
+        if(mp.count(target-arr[i])==0){
+            mp[arr[i]]=i;
         }
         else{
-            cout<<i<<" "<<mp[target-a[i]];
+            cout<<i<<" "<<mp[target-arr[i]];
             return;
         }
     }
