@@ -10,20 +10,20 @@ Input: 5 3
 Output: 17
 */
 
-void maxSumK(vector<ll>& a, int k){
+void maxSumK(vector<ll>& arr, int k){
     ll maxi=LL_MIN;
-    int n=a.size();
+    int n=arr.size();
     if(k==0||k>n){
         cout<<"Invalid Output";
         return;
     }
     ll curr_total=0;
     for(int i=0;i<n;i++){
-        if(i<k) curr_total+=a[i];
+        if(i<k) curr_total+=arr[i];
         if(i==k-1) maxi=max(maxi, curr_total);
         else if(i>=k){
-            curr_total+=a[i];
-            curr_total-=a[i-k];
+            curr_total+=arr[i];
+            curr_total-=arr[i-k];
             maxi=max(maxi,curr_total);
         }
     }
