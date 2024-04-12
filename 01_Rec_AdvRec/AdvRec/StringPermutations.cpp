@@ -2,6 +2,7 @@
 using namespace std;
 
 /*
+Return all Permutations of the given string in Lexographically Increasing Order
 Input: abc
 Output: abc acb bac bca cab cba
 */

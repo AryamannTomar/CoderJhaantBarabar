@@ -1,0 +1,29 @@
+Rohit Goyal
+Confident - ( FrontEnd / BackEnd )
+NodeJS MERN JS DSA Cpp
+
+DP-I
+Nth Fibonacci
+Staircase
+Digits Decoding
+Coin Change (Infinite Supply)
+Coin Change (Finite Supply)
+Maze Obstacles
+Min Cost Path
+
+DP-II
+Longest Common Subsequence
+Longest Increasing Subsequence
+OPtimization of LIS using Segment Trees
+Matrix Chain Multiplication
+E-Knapsack2
+Caesar's Legion
+Aloyana and Strings
+
+DP-III
+Lowest Common Ancestor
+LCA ( Lowest Common Ancestor )
+Tree Distances II
+Maximize Profit 
+Sum Of Digits
+Game Routes

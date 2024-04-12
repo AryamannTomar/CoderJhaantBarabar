@@ -3,8 +3,8 @@
 02_STL,                   ✔
 03_2PtrSlidingWindow,     ✔
 04_GreedyAlgos,           Ｏ
-05_Sorting,               Ｏ
-06_BinarySearch,          Ｏ
+05_Sorting,               ✔
+06_BinarySearch,          ✔
 07_BackTracking,          ✔
 08_BitManipulation,       ☢
 09_NumberTheory,          ☢

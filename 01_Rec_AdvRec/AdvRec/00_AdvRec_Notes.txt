@@ -1,3 +1,6 @@
 Recursion is a topic which lays the foundation steps for the later topics that we will come across like
     - BackTracking
-    - Dynamic Programming    
+    - Dynamic Programming
+
+Whenever a problem specifically points out that you have to print the subsets in sorted order
+    - You'll have to sort the input first
