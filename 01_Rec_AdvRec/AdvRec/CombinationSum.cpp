@@ -18,20 +18,30 @@ Output:
 2 3
 */
 
-void CombinationSum(vector<int>& arr, int ind, int target, vector<int>& temp, vector<vector<int>>& ans){
-    int n=arr.size();
-    // Combination Sum is Found
-    if(target==0){
-        ans.push_back(temp);
-        return;
-    }
-    // Combination Sum Not Found
-    if(ind>=n || target-arr[ind]<0) return;
-    // Pick the ith Element
-    temp.push_back(arr[ind]);
-    CombinationSum(arr,ind,target-arr[ind], temp, ans);
-    // Dont pick the ith Element
-    temp.pop_back();
-    CombinationSum(arr,ind+1,target,temp,ans);
-    return;
+void cS(vector<int>& arr, int ind, int target, vector<int>& temp, vector<vector<int>>& ans){
+	int n=arr.size();
+	if(target == 0){
+		ans.push_back(temp);
+		return;
+	}
+	if(ind>=n || target<0) return;
+	temp.push_back(arr[ind]);
+	cS(arr,ind,target-arr[ind],temp,ans);
+	temp.pop_back();
+	cS(arr,ind+1,target,temp,ans);
+	return;
+}
+
+int main(){
+	vector<vector<int>> ans;
+	vector<int> temp;
+	vector<int> arr = {1, 2, 3};
+	int target = 5;
+	cS(arr, 0, target, temp, ans);
+	for(auto x: ans){
+		for(auto y: x){
+			cout << y << " ";
+		}
+		cout << endl;
+	}
 }
