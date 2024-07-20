@@ -9,7 +9,7 @@ But before that you have to do 1 thing => "Sorting"
 If we do not sort we have to check many more options; but if we
 sort it, we can optimize our code & stop early if no solution exists
 
-Input: arr={1,2,3} b=5
+Input: arr={1,2,3} target=5
 Output: 
 1 1 1 1 1
 1 1 1 2
