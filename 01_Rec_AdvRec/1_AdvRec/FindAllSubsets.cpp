@@ -11,18 +11,18 @@ Output:
 {3}, {3,4}, {3,4,5}, {3,5}, {4}, {4,5}, {5}
 */
 
-void genSubsets(vector<int>& arr, int i, vector<int>& temp, vector<vector<int>>& ans){
+void genSubsets(vector<int>& arr, int ind, vector<int>& temp, vector<vector<int>>& ans){
   int n=arr.size();
-  if(i>=n){
+  if(ind>=n){
     if(temp.size()>0) ans.push_back(temp);
     return;
   }
   // Take ith element
-  temp.push_back(arr[i]);
-  genSubsets(arr,i+1,temp,ans);
+  temp.push_back(arr[ind]);
+  genSubsets(arr,ind+1,temp,ans);
   // Do not Take ith element
   temp.pop_back();
-  genSubsets(arr,i+1,temp,ans);
+  genSubsets(arr,ind+1,temp,ans);
   return;
 }
 
