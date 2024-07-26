@@ -1,3 +1,7 @@
+// Window Content:
+//  - Implicit: # of zeros
+//  - Explicit: previous window substring
+
 int longest_at_most_k(vector<int> &arr, int k){
     int len=0,n=arr.size();
     fr(n){
