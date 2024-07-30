@@ -1,3 +1,8 @@
+/*
+Any problem that asks for a window of numbers is a range problem
+Total no of subarrays whose sum==k
+vector<int> arr={9,-9,2,3,4}; target=9
+
 void prefix_sum(vector<int>& arr){
     int n=arr.size();
     fr1(1,n){
@@ -9,8 +14,7 @@ int range_sum(vector<int>& pre, int s, int e){
     if(s==0) return pre[e];
     return pre[e]-pre[s-1];
 }
-
-//============================================================================================================
+*/
 
 int subArrSum(vector<int>& arr, int k){
     int n=arr.size(), res=0;
@@ -20,7 +24,6 @@ int subArrSum(vector<int>& arr, int k){
             // int sum=0;
             // for(int idx=i;idx<=e;idx++) sum+=arr[idx];
             // if(sum==k) res++;
-
             if(range_sum(arr,i,e)==k) res++;
         }
     }
@@ -28,13 +31,13 @@ int subArrSum(vector<int>& arr, int k){
 }
 
 int subArrSum_v1(vector<int>& arr, int k){
-    int n=arr.size(), res=0, prefix_sum=0;
-    unordered_map<int, int> prefix_table;
-    prefix_table[0]=1;
+    unordered_map<int,int> mp;
+    int n=arr.size(),res=0,ps=0;
+    mp[0]=1;
     fr(n){
-        prefix_sum+=arr[i];
-        if(prefix_table.count(prefix_sum-k)) res+=prefix_table[prefix_sum-k];
-        prefix_table[prefix_sum]++;
+        ps+=arr[i];
+        if(mp.count(ps-k)) res+=mp[ps-k];
+        mp[ps]++;
     }
     return res;
 }

@@ -1,3 +1,0 @@
-Non - Linear Data Structures
-    .-> Trees
-    .-> Graphs

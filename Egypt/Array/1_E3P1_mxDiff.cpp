@@ -1,4 +1,9 @@
-// Large number appears to the right of it
+/*
+Large number appears to the right of it
+
+vector<int> arr={1000,2,3,10,6,4,8,1};
+ans=8
+*/
 
 int maxDiff(vector<int>& arr){
     int mx=INT_MIN;

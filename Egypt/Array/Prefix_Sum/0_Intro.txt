@@ -1,8 +1,0 @@
-Array Problems:
-    Have Pattern
-        - Range Problems
-        - 2 Pointers
-    No Pattern
-        - Ad-hoc Problems -> HashTable, Sorting Array, Greedy
-
-Subarray Vs Sequence (non-contiguous)

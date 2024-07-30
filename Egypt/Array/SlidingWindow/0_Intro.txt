@@ -1,2 +1,0 @@
-    - Always Remember; You cant cancel range for prefix_sum approach
-    - Practically speaking sliding-window problems solves much more problems than prefix_sum;  
